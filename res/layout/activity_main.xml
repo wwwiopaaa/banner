@@ -1,0 +1,60 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#75f"
+            android:text="BannerView" />
+
+        <com.chenjl.banner.widget.BannerView
+            android:id="@+id/bannerview"
+            android:layout_width="match_parent"
+            android:layout_height="90dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#75f"
+            android:textColor="#fff"
+            android:text="TextIndicatorBannerView" />
+
+        <com.chenjl.banner.widget.TextIndicatorBannerView
+            android:id="@+id/bannerview_textindicator"
+            android:layout_width="match_parent"
+            android:layout_height="90dp" />
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#75f"
+            android:textColor="#fff"
+            android:text="AutoScrollBannerView" />
+
+        <com.chenjl.banner.widget.AutoScrollBannerView
+            android:id="@+id/bannerview_autoscroll"
+            android:layout_width="match_parent"
+            android:layout_height="90dp" />
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#75f"
+            android:textColor="#fff"
+            android:text="AutoScrollCycleBannerView" />
+
+        <com.chenjl.banner.widget.AutoScrollCycleBannerView
+            android:id="@+id/bannerview_autoscroll_cycle"
+            android:layout_width="match_parent"
+            android:layout_height="90dp" />
+    </LinearLayout>
+
+</ScrollView>
